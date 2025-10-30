@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дмитрий Завьялов — ведущий мероприятий</title>
+    <meta name="description" content="Профессиональный ведущий мероприятий. Свадьбы, корпоративы, праздники. 10 лет опыта.">
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Перенесем скрипт в конец body для ускорения загрузки -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Добавим alt текст для SEO -->
+                <img src="img/logo.jpg" alt="Логотип Дмитрий Завьялов">
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#about">О ведущем</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <!-- Кнопка бургер-меню для мобильных устройств -->
+            <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-video-container">
+            <video autoplay loop muted playsinline class="hero-video">
+                <!-- Добавим несколько форматов для кроссбраузерности -->
+                <source src="clideo_editor.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <!-- Наложение для лучшей читаемости текста -->
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-up">Дмитрий Завьялов</h1>
+            <p class="hero-subtitle animate-fade-up">Харизматичный профессионал с 10-летним опытом</p>
+            <!-- Добавим якорь на форму заказа -->
+            <button class="btn btn-hero" onclick="scrollToContact()">Заказать услугу</button>
+        </div>
+        <!-- Кнопка для прокрутки вниз -->
+        <a href="#about" class="scroll-down" aria-label="Прокрутить вниз">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">О ведущем</h2>
+            <p class="about-intro">Дмитрий Завьялов — обаятельный, красивый, неугомонный весельчак, готовый на
+                <strong>ВСЁ</strong>, чтобы превратить ваше событие в незабываемую сказку!</p>
+            <ul class="features">
+                <li class="animate-on-scroll">Провел более <strong>500 свадеб</strong> и более <strong>1000
+                        мероприятий</strong> различных стилей и масштабов!</li>
+                <li class="animate-on-scroll">Душевный, искренний и интеллигентный ведущий!</li>
+                <li class="animate-on-scroll">Танцуют <strong>ВСЕ</strong>!</li>
+            </ul>
+            <p class="highlight animate-on-scroll">Отличный выбор для тех, кто ценит искренность и профессионализм в
+                работе!</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section-padding" id="portfolio">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Портфолио</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate-on-scroll">
+                    <div class="portfolio-img-container">
+                        <img src="img/photo1.jpg" alt="Свадьба в усадьбе" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-text">
+                                <h3>Свадьба в усадьбе</h3>
+                                <p>Торжественная церемония в историческом особняке</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll">
+                    <div class="portfolio-img-container">
+                        <img src="img/photo2.jpg" alt="Корпоратив 2023" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-text">
+                                <h3>Корпоратив 2023</h3>
+                                <p>Новогодний праздник для крупной IT-компании</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Добавим еще один элемент для примера -->
+                <div class="portfolio-item animate-on-scroll">
+                    <div class="portfolio-img-container">
+                        <img src="img/photo3.jpg" alt="Детский день рождения" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-text">
+                                <h3>Детский праздник</h3>
+                                <p>Тематический день рождения в стиле Marvel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews section-padding" id="reviews">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Отзывы клиентов</h2>
+            <div class="reviews-slider">
+                <div class="review-item active">
+                    <div class="review-header">
+                        <img src="img/client1.jpg" alt="Анна" loading="lazy">
+                        <div class="review-client">
+                            <h3>Анна и Михаил</h3>
+                            <span>Свадьба, Москва</span>
+                        </div>
+                    </div>
+                    <p>«Дмитрий сделал нашу свадьбу незабываемой! Он чувствовал настроение гостей и создавал
+                        именно ту атмосферу, которую мы хотели. Спасибо за прекрасный день!»</p>
+                </div>
+                <div class="review-item">
+                    <div class="review-header">
+                        <img src="img/client2.jpg" alt="Ольга" loading="lazy">
+                        <div class="review-client">
+                            <h3>Ольга</h3>
+                            <span>Корпоратив, Санкт-Петербург</span>
+                        </div>
+                    </div>
+                    <p>«Наш корпоратив с Дмитрием прошел на ура! Энергии хватило на всех, даже самые скептически
+                        настроенные коллеги танцевали до упаду. Профессионал высшего класса!»</p>
+                </div>
+                <div class="review-item">
+                    <div class="review-header">
+                        <img src="img/client3.jpg" alt="Сергей" loading="lazy">
+                        <div class="review-client">
+                            <h3>Сергей</h3>
+                            <span>Юбилей, Казань</span>
+                        </div>
+                    </div>
+                    <p>«Заказывали Дмитрия на юбилей отца. Все гости были в восторге! Вечер пролетел незаметно,
+                        было весело, трогательно и очень душевно. Спасибо за прекрасную организацию!»</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev" aria-label="Предыдущий отзыв">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots"></div>
+                <button class="slider-btn next" aria-label="Следующий отзыв">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Услуги</h2>
+            <div class="services-cards">
+                <div class="service-card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Свадьба</h3>
+                    <p>Организация и ведение свадеб любого масштаба. От росписи до банкета.</p>
+                    <ul class="service-features">
+                        <li>Разработка сценария</li>
+                        <li>Весь день с вами</li>
+                        <li>Музыкальное сопровождение</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Корпоративы</h3>
+                    <p>Энергичные и запоминающиеся корпоративы для вашей компании.</p>
+                    <ul class="service-features">
+                        <li>Тимбилдинг программы</li>
+                        <li>Развлекательные шоу</li>
+                        <li>Танцевальные конкурсы</li>
+                    </ul>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Детские праздники</h3>
+                    <p>Весёлые и безопасные детские мероприятия с анимацией.</p>
+                    <ul class="service-features">
+                        <li>Тематические программы</li>
+                        <li>Игры и конкурсы</li>
+                        <li>Безопасные развлечения</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Свяжитесь со мной</h3>
+                    <p>Готов обсудить детли вашего мероприятия и сделать его незабываемым!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (XXX) XXX-XX-XX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>example@mail.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Работаю по всей России</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="VKontakte"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Ваш email" required>
+                    <input type="tel" placeholder="Ваш телефон">
+                    <select>
+                        <option value="" disabled selected>Тип мероприятия</option>
+                        <option value="wedding">Свадьба</option>
+                        <option value="corporate">Корпоратив</option>
+                        <option value="birthday">День рождения</option>
+                        <option value="other">Другое</option>
+                    </select>
+                    <textarea placeholder="Сообщение" rows="5"></textarea>
+                    <button type="submit" class="btn btn-submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© <span id="currentYear"></span> Дмитрий Завьялов. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="VKontakte"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключим скрипты в конце body -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
